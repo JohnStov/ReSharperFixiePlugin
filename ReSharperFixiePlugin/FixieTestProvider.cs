@@ -9,22 +9,22 @@ namespace ReSharperFixiePlugin
     {
         public bool IsElementOfKind(IDeclaredElement declaredElement, UnitTestElementKind elementKind)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public bool IsElementOfKind(IUnitTestElement element, UnitTestElementKind elementKind)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public bool IsSupported(IHostProvider hostProvider)
         {
-            throw new System.NotImplementedException();
+            return false;
         }
 
         public int CompareUnitTestElements(IUnitTestElement x, IUnitTestElement y)
         {
-            throw new System.NotImplementedException();
+            return 0;
         }
 
         public string ID => "Fixie";
