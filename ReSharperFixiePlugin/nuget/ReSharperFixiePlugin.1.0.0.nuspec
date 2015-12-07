@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>ReSharperFixiePlugin</id>
+        <id>JohnStovin.Fixie</id>
         <version>1.0.0</version>
         <title>Fixie Test Support for ReSharper 10</title>
         <authors>John Stovin</authors>
