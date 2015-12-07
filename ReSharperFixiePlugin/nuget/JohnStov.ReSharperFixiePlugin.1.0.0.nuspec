@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>ReSharperFixiePlugin</id>
+        <version>1.0.0</version>
+        <title>Fixie Test Support for ReSharper 10</title>
+        <authors>John Stovin</authors>
+        <owners>John Stovin</owners>
+        <licenseUrl>https://github.com/JohnStov/ReSharperFixiePlugin/blob/master/LICENSE.md</licenseUrl>
+        <projectUrl>https://github.com/JohnStov/ReSharperFixiePlugin</projectUrl>
+        <iconUrl>https://github.com/fixie/fixie/blob/master/img/fixie.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A unit test provider for Fixie. Discovers and runs Fixie tests.</description>
+        <summary>A unit test provider for Fixie</summary>
+        <copyright>Copyright 2015 John Stovin</copyright>
+        <dependencies>
+            <dependency id="Wave" version="[4.0]" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\bin\Release\ReSharperFixiePlugin.dll" target="DotFiles\ReSharperFixiePlugin.dll" />
+    </files>
+</package>
