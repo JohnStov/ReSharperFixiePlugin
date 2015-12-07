@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FixieTestElementsSource.cs" />
+    <Compile Include="FixieTestProvider.cs" />
     <Compile Include="ZoneMarker.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

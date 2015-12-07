@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Threading;
 using JetBrains.Metadata.Reader.API;
 using JetBrains.ProjectModel;
@@ -12,12 +13,18 @@ namespace ReSharperFixiePlugin
     [SolutionComponent]
     public class FixieTestElementsSource : IUnitTestElementsSource
     {
+        [SuppressMessage("ReSharper", "SuggestBaseTypeForParameter")]
+        public FixieTestElementsSource(FixieTestProvider provider)
+        {
+            Provider = provider;
+        }
+
         public void ExploreSolution(IUnitTestElementsObserver observer)
         {
             throw new System.NotImplementedException();
         }
 
-        public IUnitTestProvider Provider => null;
+        public IUnitTestProvider Provider { get; }
 
         public void ExploreFile(IFile psiFile, IUnitTestElementsObserver observer, Func<bool> interrupted)
         {
