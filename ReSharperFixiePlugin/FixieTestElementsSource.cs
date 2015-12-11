@@ -48,12 +48,5 @@ namespace ReSharperFixiePlugin
             metadataElementsSource.ExploreProjects(projects, loader, observer, explorer.ExploreAssembly, cancellationToken);
             observer.OnCompleted();
         }
-
-        private static bool IsProjectFile(IFile psiFile)
-        {
-            // Can return null for external sources
-            var projectFile = psiFile.GetSourceFile().ToProjectFile();
-            return projectFile != null;
-        }
     }
 }

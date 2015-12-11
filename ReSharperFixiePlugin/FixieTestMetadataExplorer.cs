@@ -19,7 +19,7 @@ namespace ReSharperFixiePlugin
         public void ExploreAssembly(IProject project, IMetadataAssembly assembly, IUnitTestElementsObserver observer,
             CancellationToken cancellationToken)
         {
-            // No point going further if we dn't hold a Fixie reference
+            // No point going further if we don't hold a Fixie reference
             if (!ProjectHasFixieReference(project))
                 return;
 
